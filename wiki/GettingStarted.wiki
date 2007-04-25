@@ -4,8 +4,8 @@ This page will show you how to compile and run libmtag.
 
 You'll need *taglib-devel*.
 
-Fedora: yum install taglib-devel
-Ubuntu: apt-get install taglib-devel
+ * Fedora: yum install taglib-devel
+ * Ubuntu: apt-get install taglib-devel
 
 = Library =
 
