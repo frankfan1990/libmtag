@@ -2,7 +2,7 @@
 
 = C =
 
-{{
+{{{
 MTag_File *file;
 MTag_Tag *tag;
 
@@ -12,7 +12,7 @@ tag = mtag_file_tag (file);
 printf (”%s - %s\n”, mtag_tag_get (tag, “artist”), mtag_tag_get (tag, “title”));
 
 mtag_file_free (file);
-}}
+}}}
 
 = Ruby =
 
@@ -20,5 +20,4 @@ mtag_file_free (file);
 file = MTag::File.new(fn)
 print(”%s - %s\n” % [file.tag.artist, file.tag.title])
 }}}
-
 
