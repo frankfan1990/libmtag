@@ -1,0 +1,84 @@
+#summary How to get started with libmtag.
+
+This page will show you how to compile and run libmtag.
+
+You'll need *taglib-devel*.
+
+ * Fedora: yum install taglib-devel
+ * Ubuntu: apt-get install taglib-devel
+
+= Library =
+
+Get the code:
+{{{
+svn checkout http://libmtag.googlecode.com/svn/main/trunk libmtag
+}}}
+
+Build:
+{{{
+cd libmtag
+autoreconf --install
+./configure --prefix=$HOME/mtag
+make
+}}}
+
+Test:
+{{{
+./tests/reader "song.mp3"
+}}}
+
+Install:
+{{{
+make install
+}}}
+
+== Non-standard prefix ==
+
+These instructions are only needed if you installed in a non-standard prefix (e.g. not --prefix=/usr)
+
+In order for applications to run:
+{{{
+export LD_LIBRARY_PATH=$HOME/mtag/lib
+}}}
+
+In order for applications to compile:
+{{{
+export PKG_CONFIG_PATH=$HOME/mtag/lib/pkgconfig
+}}}
+
+= Ruby =
+
+Get the code:
+{{{
+svn checkout http://libmtag.googlecode.com/svn/ruby/trunk libmtag-ruby
+}}}
+
+Build:
+{{{
+cd libmtag-ruby
+ruby extconf.rb
+make
+}}}
+
+Test:
+{{{
+ruby test.rb "song.mp3"
+}}}
+
+= Python =
+
+Get the code:
+{{{
+svn checkout http://libmtag.googlecode.com/svn/python/trunk libmtag-python
+}}}
+
+Build:
+{{{
+cd libmtag-python
+make
+}}}
+
+Test:
+{{{
+python test.py "song.mp3"
+}}}

@@ -1,4 +1,4 @@
-#summary How to get started with libmtag.
+﻿#summary How to get started with libmtag.
 
 This page will show you how to compile and run libmtag.
 
@@ -9,16 +9,12 @@ You'll need *taglib-devel*.
 
 = Library =
 
-Get the code:
-{{{
-svn checkout http://libmtag.googlecode.com/svn/main/trunk libmtag
-}}}
+Get the [http://libmtag.googlecode.com/files/libmtag-0.1.0.tar.gz code]
 
 Build:
 {{{
 cd libmtag
-autoreconf --install
-./configure --prefix=$HOME/mtag
+./configure --prefix=/usr
 make
 }}}
 
@@ -32,26 +28,9 @@ Install:
 make install
 }}}
 
-== Non-standard prefix ==
-
-These instructions are only needed if you installed in a non-standard prefix (e.g. not --prefix=/usr)
-
-In order for applications to run:
-{{{
-export LD_LIBRARY_PATH=$HOME/mtag/lib
-}}}
-
-In order for applications to compile:
-{{{
-export PKG_CONFIG_PATH=$HOME/mtag/lib/pkgconfig
-}}}
-
 = Ruby =
 
-Get the code:
-{{{
-svn checkout http://libmtag.googlecode.com/svn/ruby/trunk libmtag-ruby
-}}}
+Get the [http://libmtag.googlecode.com/files/libmtag-ruby-0.1.0.tar.gz code]
 
 Build:
 {{{
@@ -67,10 +46,7 @@ ruby test.rb "song.mp3"
 
 = Python =
 
-Get the code:
-{{{
-svn checkout http://libmtag.googlecode.com/svn/python/trunk libmtag-python
-}}}
+Get the [http://libmtag.googlecode.com/files/libmtag-python-0.1.0.tar.gz code]
 
 Build:
 {{{
