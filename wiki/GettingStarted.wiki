@@ -60,9 +60,25 @@ ruby extconf.rb
 make
 }}}
 
- * Note: Remember to export *PKG_CONFIG_PATH* before building.
-
 Test:
 {{{
 ruby test.rb "song.mp3"
+}}}
+
+= Python =
+
+Get the code:
+{{{
+svn checkout http://libmtag.googlecode.com/svn/python/trunk libmtag-python
+}}}
+
+Build:
+{{{
+cd libmtag-python
+make
+}}}
+
+Test:
+{{{
+python test.py "song.mp3"
 }}}
