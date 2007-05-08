@@ -1,0 +1,12 @@
+== Build ==
+
+./configure
+make
+
+== Install ==
+
+make install
+
+== Test ==
+
+./tests/reader <filename>
