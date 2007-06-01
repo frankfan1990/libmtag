@@ -10,7 +10,7 @@ You'll need *taglib-devel*.
 
 = Library =
 
-Get the [http://libmtag.googlecode.com/files/libmtag-0.1.0.tar.gz code]
+Get the [http://libmtag.googlecode.com/files/libmtag-0.2.0.tar.gz code]
 
 Build:
 {{{
@@ -31,7 +31,7 @@ make install
 
 = Ruby =
 
-Get the [http://libmtag.googlecode.com/files/libmtag-ruby-0.1.0.tar.gz code]
+Get the [http://libmtag.googlecode.com/files/libmtag-ruby-0.2.0.tar.gz code]
 
 Build:
 {{{
