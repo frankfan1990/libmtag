@@ -1,0 +1,3 @@
+#summary Git repository
+
+The source code is hosted [http://github.com/felipec/libmtag/ here].
