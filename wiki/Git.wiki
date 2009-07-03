@@ -2,6 +2,6 @@
 
 The source code is hosted in [http://github.com github.com].
 
- * [http://github.com/felipec/libmtag/ libmtag].
- * [http://github.com/felipec/libmtag-ruby/ libmtag-ruby].
- * [http://github.com/felipec/libmtag-python/ libmtag-python].
+ * [http://github.com/felipec/libmtag/ libmtag]
+ * [http://github.com/felipec/libmtag-ruby/ libmtag-ruby]
+ * [http://github.com/felipec/libmtag-python/ libmtag-python]
