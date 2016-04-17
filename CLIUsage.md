@@ -1,0 +1,25 @@
+How to get the tag:
+
+```
+mtag -g -f myfile.mp3
+```
+
+How to get a single field:
+
+```
+mtag -g -a -f myfile.mp3
+mtag -g -k artist -f myfile.mp3
+```
+
+How to get a special tag:
+
+```
+mtag -g -p id3v1 -f myfile.mp3
+```
+
+How to save a tag:
+
+```
+mtag -s -a -v "My Favorite" -f myfile.mp3
+mtag -s -k artist -v "My Favorite" -f myfile.mp3
+```

@@ -1,0 +1,36 @@
+﻿#summary Simple samples.
+
+# C #
+
+```
+mtag_file_t *file;
+mtag_tag_t *tag;
+
+file = mtag_file_new("song.mp3");
+
+tag = mtag_file_tag(file);
+printf(”%s - %s\n”, mtag_tag_get(tag, “artist”), mtag_tag_get(tag, “title”));
+
+mtag_tag_set(tag, "artist", "foo");
+mtag_file_save(file);
+
+mtag_file_free(file);
+```
+
+# Ruby #
+
+```
+file = MTag::File.new(fn)
+print(”%s - %s\n” % [file.tag.artist, file.tag.title])
+file.tag.artist = "foo"
+file.save
+```
+
+# Python #
+
+```
+file = libmtag.File(fn)
+print "%s - %s" % (file.tag().get("artist"), file.tag().get("title"))
+file.tag().set("artist", "foo")
+file.save()
+```

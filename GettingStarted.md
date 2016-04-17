@@ -1,0 +1,61 @@
+﻿#summary How to get started with libmtag.
+#labels Featured,Phase-Deploy
+
+This page will show you how to compile and run libmtag.
+
+You'll need **taglib-devel**.
+
+  * Fedora: yum install taglib-devel
+  * Ubuntu: apt-get install taglib-devel
+
+# Library #
+
+Get the [code](http://libmtag.googlecode.com/files/libmtag-0.2.0.tar.gz)
+
+Build:
+```
+cd libmtag
+./configure --prefix=/usr
+make
+```
+
+Test:
+```
+./tests/reader "song.mp3"
+```
+
+Install:
+```
+make install
+```
+
+# Ruby #
+
+Get the [code](http://libmtag.googlecode.com/files/libmtag-ruby-0.2.0.tar.gz)
+
+Build:
+```
+cd libmtag-ruby
+ruby extconf.rb
+make
+```
+
+Test:
+```
+ruby test.rb "song.mp3"
+```
+
+# Python #
+
+Get the [code](http://libmtag.googlecode.com/files/libmtag-python-0.1.0.tar.gz)
+
+Build:
+```
+cd libmtag-python
+make
+```
+
+Test:
+```
+python test.py "song.mp3"
+```
